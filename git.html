@@ -20,14 +20,14 @@
         <li><span class="highlight">ls [аргументы]</span> — показать список файлов в директории.
             <ul>
                 <li><span class="highlight"><pre>    -l</span> — подробный список файлов с правами доступа, владельцем и размером.</pre></li>
-                <li><span class="highlight">-a</span> — показать все файлы, включая скрытые.</li>
-                <li><span class="highlight">-h</span> — показать размер файлов в человекочитаемом формате (например, КБ, МБ).</li>
+                <li><span class="highlight"><pre>    -a</span> — показать все файлы, включая скрытые.</pre></li>
+                <li><span class="highlight"><pre>    -h</span> — показать размер файлов в человекочитаемом формате (например, КБ, МБ).</pre></li>
             </ul>
         </li>
         <li><span class="highlight">cd <путь></span> — сменить директорию.
             <ul>
-                <li><span class="highlight">cd ..</span> — перейти в родительскую директорию.</li>
-                <li><span class="highlight">cd ~</span> — перейти в домашнюю директорию.</li>
+                <li><span class="highlight"><pre>    cd ..</span> — перейти в родительскую директорию.</pre></li>
+                <li><span class="highlight"><pre>    cd ~</span> — перейти в домашнюю директорию.</pre></li>
             </ul>
         </li>
     </ul>
@@ -36,14 +36,14 @@
     <ul>
         <li><span class="highlight">mkdir <имя_папки></span> — создать новую папку.
             <ul>
-                <li><span class="highlight">-p</span> — создать родительские папки, если их не существует.</li>
+                <li><span class="highlight"><pre>    -p</span> — создать родительские папки, если их не существует.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">rmdir <имя_папки></span> — удалить пустую папку.</li>
         <li><span class="highlight">rm <имя_файла></span> — удалить файл.
             <ul>
-                <li><span class="highlight">-r</span> — рекурсивное удаление (для папок и их содержимого).</li>
-                <li><span class="highlight">-f</span> — принудительное удаление (без запроса подтверждения).</li>
+                <li><span class="highlight"><pre>    -r</span> — рекурсивное удаление (для папок и их содержимого).</pre></li>
+                <li><span class="highlight"><pre>    -f</span> — принудительное удаление (без запроса подтверждения).</pre></li>
             </ul>
         </li>
     </ul>
@@ -52,13 +52,13 @@
     <ul>
         <li><span class="highlight">cp <источник> <назначение></span> — копировать файл или папку.
             <ul>
-                <li><span class="highlight">-r</span> — копировать папку и все её содержимое.</li>
+                <li><span class="highlight"><pre>    -r</span> — копировать папку и все её содержимое.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">mv <источник> <назначение></span> — переместить или переименовать файл или папку.</li>
         <li><span class="highlight">cat <имя_файла></span> — вывести содержимое файла.
             <ul>
-                <li><span class="highlight">-n</span> — пронумеровать строки в выводе.</li>
+                <li><span class="highlight"><pre>    -n</span> — пронумеровать строки в выводе.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">echo "текст" > <имя_файла></span> — записать текст в файл.</li>
@@ -68,15 +68,15 @@
     <ul>
         <li><span class="highlight">grep "текст" <имя_файла></span> — найти текст в файле.
             <ul>
-                <li><span class="highlight">-i</span> — игнорировать регистр при поиске.</li>
-                <li><span class="highlight">-r</span> — рекурсивный поиск по файлам в директориях.</li>
-                <li><span class="highlight">-v</span> — инвертировать поиск (вывести строки, которые не содержат текст).</li>
+                <li><span class="highlight"><pre>    -i</span> — игнорировать регистр при поиске.</pre></li>
+                <li><span class="highlight"><pre>    -r</span> — рекурсивный поиск по файлам в директориях.</pre></li>
+                <li><span class="highlight"><pre>    -v</span> — инвертировать поиск (вывести строки, которые не содержат текст).</pre></li>
             </ul>
         </li>
         <li><span class="highlight">find <путь> -name <имя_файла></span> — найти файл по имени.
             <ul>
-                <li><span class="highlight">-type d</span> — искать только папки.</li>
-                <li><span class="highlight">-type f</span> — искать только файлы.</li>
+                <li><span class="highlight"><pre>    -type d</span> — искать только папки.</pre></li>
+                <li><span class="highlight"><pre>    -type f</span> — искать только файлы.</pre></li>
             </ul>
         </li>
     </ul>
@@ -90,29 +90,29 @@
         <li><span class="highlight">git init</span> — инициализировать новый репозиторий Git.</li>
         <li><span class="highlight">git clone <url></span> — клонировать удалённый репозиторий.
             <ul>
-                <li><span class="highlight">--depth 1</span> — клонировать только последний коммит (для экономии места).</li>
+                <li><span class="highlight"><pre>    --depth 1</span> — клонировать только последний коммит (для экономии места).</pre></li>
             </ul>
         </li>
         <li><span class="highlight">git status</span> — показать статус изменений в репозитории.</li>
         <li><span class="highlight">git add <имя_файла></span> — добавить файл в индекс (для коммита).
             <ul>
-                <li><span class="highlight">.</span> — добавить все файлы в текущей директории.</li>
+                <li><span class="highlight"><pre>    .</span> — добавить все файлы в текущей директории.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">git commit -m "сообщение"</span> — зафиксировать изменения с сообщением.
             <ul>
-                <li><span class="highlight">-a</span> — автоматически добавить все измененные файлы перед коммитом.</li>
-                <li><span class="highlight">--amend</span> — изменить последний коммит.</li>
+                <li><span class="highlight"><pre>    -a</span> — автоматически добавить все измененные файлы перед коммитом.</pre></li>
+                <li><span class="highlight"><pre>    --amend</span> — изменить последний коммит.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">git push</span> — отправить изменения в удалённый репозиторий.
             <ul>
-                <li><span class="highlight">-u <удалённый> <ветка></span> — задать удалённый репозиторий и ветку по умолчанию.</li>
+                <li><span class="highlight"><pre>    -u <удалённый> <ветка></span> — задать удалённый репозиторий и ветку по умолчанию.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">git pull</span> — получить изменения из удалённого репозитория.
             <ul>
-                <li><span class="highlight">--rebase</span> — применить изменения с использованием rebase вместо merge.</li>
+                <li><span class="highlight"><pre>    --rebase</span> — применить изменения с использованием rebase вместо merge.</pre></li>
             </ul>
         </li>
     </ul>
@@ -121,18 +121,18 @@
     <ul>
         <li><span class="highlight">git branch</span> — показать список веток.
             <ul>
-                <li><span class="highlight">-a</span> — показать все ветки, включая удалённые.</li>
+                <li><span class="highlight"><pre>    -a</span> — показать все ветки, включая удалённые.</pre></li>
             </ul>
         </li>
         <li><span class="highlight">git branch <имя_ветки></span> — создать новую ветку.</li>
         <li><span class="highlight">git checkout <имя_ветки></span> — переключиться на другую ветку.
             <ul>
-                <li><span class="highlight">-b</span> — создать новую ветку и сразу переключиться на неё.</li>
+                <li><span class="highlight"><pre>    -b</span> — создать новую ветку и сразу переключиться на неё.</pre></li>
             </ul>
         </li>
 <li><span class="highlight">git merge <имя_ветки></span> — слить ветку с текущей веткой.
             <ul>
-                <li><span class="highlight">--no-ff</span> — создать новый коммит при слиянии (без "быстрого слияния").</li>
+                <li><span class="highlight"><pre>    --no-ff</span> — создать новый коммит при слиянии (без "быстрого слияния").</pre></li>
             </ul>
         </li>
     </ul>
@@ -142,7 +142,7 @@
         <li><span class="highlight">git remote add origin <url></span> — добавить удалённый репозиторий.</li>
         <li><span class="highlight">git fetch</span> — получить изменения из удалённого репозитория.
             <ul>
-                <li><span class="highlight">--all</span> — получить изменения из всех удалённых репозиториев.</li>
+                <li><span class="highlight"><pre>    --all</span> — получить изменения из всех удалённых репозиториев.</pre></li>
             </ul>
         </li>
     </ul>
