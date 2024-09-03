@@ -2,25 +2,27 @@ body {
     font-family: 'Orbitron', sans-serif; /* Шрифт в стиле киберпанк */
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1a1a1a, #0d0d0d); /* Градиентный фон */
+    background: linear-gradient(135deg, #000000, #1a1a1a); /* Градиентный фон от черного к темно-серому */
     color: #e0e0e0; /* Светлый текст */
 }
 
 header {
-    background-color: #4a148c; /* Глубокий фиолетовый фон */
+    background-color: #001f3f; /* Тёмно-синий фон */
     color: #ffffff; /* Белый текст */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для лучшего эффекта */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Более выраженная тень */
 }
 
 h1 {
-    color: #d500f9; /* Яркий неоновый фиолетовый */
+    color: #00bfff; /* Яркий неоновый синий */
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff; /* Неоновое свечение */
 }
 
 h2, h3 {
-    color: #d500f9; /* Яркий неоновый фиолетовый */
+    color: #00bfff; /* Яркий неоновый синий */
+    text-shadow: 0 0 8px #00bfff;
 }
 
 ul {
@@ -34,42 +36,48 @@ ul li {
 
 a {
     text-decoration: none;
-    color: #f50057; /* Яркий неоновый розовый */
+    color: #00bfff; /* Яркий неоновый синий */
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s; /* Плавный переход для цвета и тени */
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ff4081; /* Яркий неоновый розовый при наведении */
+    color: #00ffff; /* Яркий неоновый голубой при наведении */
+    text-shadow: 0 0 8px #00ffff; /* Неоновое свечение при наведении */
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #c2185b; /* Тёмно-розовый цвет */
+    color: #00bfff; /* Яркий неоновый синий */
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background-color: #3f0071; /* Немного светлее фиолетовый для секций */
+    background-color: #002f4b; /* Тёмно-синий фон для секций */
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Неоновая тень */
 }
 
+/* Обновленная анимация для текста */
 @keyframes glow {
-    0% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
-    50% { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
-    100% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
+    0% { text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff; }
+    50% { text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff; }
+    100% { text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff; }
 }
 
 a {
     text-decoration: none;
-    color: #ff00ff; /* Яркий неоновый фиолетовый */
+    color: #00bfff; /* Яркий неоновый синий */
     font-weight: bold;
     animation: glow 1.5s infinite; /* Анимация свечения */
 }
 
 a:hover {
-    color: #00ffcc; /* Яркий неоновый бирюзовый при наведении */
-    text-shadow: 0 0 8px #00ffcc;
+    color: #00ffff; /* Яркий неоновый голубой при наведении */
+    text-shadow: 0 0 10px #00ffff;
     animation: none; /* Отключаем анимацию при наведении */
 }
+
