@@ -92,5 +92,10 @@ a:hover {
 @media (max-width: 768px) {
     .container {
         max-width: 100%; /* Ширина контейнера 100% на мобильных устройствах */
+        word-wrap: break-word; /* Автоматический перенос длинных слов */
+    }
+    
+    body, p, li {
+        word-wrap: break-word; /* Автоматический перенос текста */
     }
 }
