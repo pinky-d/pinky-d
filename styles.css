@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Шрифт в стиле киберпанк */
     margin: 0;
     padding: 0;
-    background-color: #2e003e; /* Тёмно-фиолетовый фон */
-    color: #e1bee7; /* Светло-фиолетовый текст */
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d); /* Градиентный фон */
+    color: #e0e0e0; /* Светлый текст */
 }
 
 header {
