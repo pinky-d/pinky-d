@@ -1,36 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #2e003e; /* Тёмно-фиолетовый фон */
+    color: #e1bee7; /* Светло-фиолетовый текст */
 }
+
 header {
-    background-color: #f5f5f5;
+    background-color: #4a148c; /* Глубокий фиолетовый фон */
+    color: #ffffff; /* Белый текст */
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для лучшего эффекта */
 }
+
 h1 {
-    color: #333;
+    color: #d500f9; /* Яркий неоновый фиолетовый */
 }
+
 h2, h3 {
-    color: #555;
+    color: #d500f9; /* Яркий неоновый фиолетовый */
 }
+
 ul {
     list-style-type: none;
     padding-left: 0;
 }
+
 ul li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
+
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #f50057; /* Яркий неоновый розовый */
 }
+
 a:hover {
     text-decoration: underline;
+    color: #ff4081; /* Яркий неоновый розовый при наведении */
 }
+
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #888;
+    color: #c2185b; /* Тёмно-розовый цвет */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #3f0071; /* Немного светлее фиолетовый для секций */
+    border-radius: 8px;
 }
